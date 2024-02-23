@@ -25,11 +25,11 @@ This web application showcases planets from the Star Wars universe using the Sta
 git clone https://github.com/your-username/star-wars-planets.git
 Navigate to the project directory:
 bash
-Copy code
+
 cd star-wars-planets
 Install dependencies:
+
 bash
-Copy code
 npm install
 Running the App
 Start the development server:
