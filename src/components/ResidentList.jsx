@@ -1,6 +1,5 @@
-// components/ResidentList.js
+// components/ResidentList.jsx
 import React, { useState, useEffect } from 'react';
-import { getResidentDetails } from '../services/swapiService';
 
 const ResidentList = ({ residents }) => {
   const [residentDetails, setResidentDetails] = useState([]);
@@ -9,17 +8,14 @@ const ResidentList = ({ residents }) => {
   useEffect(() => {
     const fetchResidentDetails = async () => {
       try {
-        // Fetch resident details for each URL in parallel
         const residentResponses = await Promise.all(
           residents.map(url => fetch(url))
         );
 
-        // Sort responses based on their response time
         const sortedResponses = residentResponses.sort(
           (a, b) => a.elapsedTime - b.elapsedTime
         );
 
-        // Extract JSON data from sorted responses
         const residentData = await Promise.all(
           sortedResponses.map(response => response.json())
         );
@@ -28,7 +24,6 @@ const ResidentList = ({ residents }) => {
         setLoading(false);
       } catch (error) {
         console.error('Error fetching resident details:', error);
-        // Optionally, you can handle errors here
         setLoading(false);
       }
     };
