@@ -1,4 +1,4 @@
-// components/Navbar.js
+
 import React from 'react';
 
 const Navbar = () => {
