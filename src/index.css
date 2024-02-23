@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.planet-card {
+  transition: transform 0.3s ease; 
+}
+
+.planet-card:hover {
+  transform: scale(1.05); 
+}
+
