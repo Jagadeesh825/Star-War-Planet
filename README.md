@@ -35,7 +35,6 @@ Running the App
 Start the development server:
 
 bash
-Copy code
 npm start
 Open http://localhost:3000 in your browser to view the app.
 
@@ -51,7 +50,7 @@ API Documentation
 The application interacts with the Star Wars API (SWAPI) to fetch data about planets and residents. For more information about the SWAPI, refer to the documentation.
 
 Deployment
-Deploy your completed project to a free hosting service such as GitHub Pages, Vercel, or Netlify.
+Deployed my project in Netlify.
 
 Contributing
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests. Please follow our contribution guidelines.
@@ -65,4 +64,3 @@ SWAPI (Star Wars API) provides the data used in this project.
 
 
 
-Feel free to replace placeholders such as `your-username` with your actual GitHub username and customize any other parts of the README to fit your project's specifics. Additionally, you can create separate files for the license (e.g., `LICENSE`), contribution guidelines (e.g., `CONTRIBUTING.md`), or any other documentation referenced in the README.
